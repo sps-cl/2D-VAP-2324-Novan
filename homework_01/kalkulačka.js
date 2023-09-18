@@ -8,8 +8,11 @@ function calculate(num1, operator, num2){
         result = num1 - num2
         break;
     case "/":
+        if (num2 === 0){
+            console.log("error")
+        } else {
         result = num1 / num2
-        break;
+            } break;
     case "*":
         result = num1 * num2
         break;
